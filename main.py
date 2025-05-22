@@ -52,7 +52,7 @@ container_write = connectdb_write();
 app = FastAPI();
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],
+    allow_origins=["http://localhost:5173", "http://www.trimmr.dev", "http://trimmr.dev", "http://polite-pebble-07189d410.6.azurestaticapps.net", "https://www.trimmr.dev", "https://trimmr.dev", "https://polite-pebble-07189d410.6.azurestaticapps.net"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
